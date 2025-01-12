@@ -44,7 +44,7 @@
 .navbar > ul > li > a:hover {
     color: #008CBA;
     text-decoration: none;
-    background-color: red;
+    background-color: orange;
     height: 20px;
 }
 
@@ -52,13 +52,17 @@
     background-color: orange;
 }
 
-header{
-    background-color: #BBB;
-}
-
-.header-content {
+header {
+    padding: 0;
     width: 100%;
-    height: 200px;
-    background: url("../img/Sprecherbild.png") no-repeat;
-    background-size: contain;
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-around; /* Abstand zwischen den Bildern */
+    align-items: center; /* Bilder vertikal zentrieren */
+    overflow-x: scroll;
+    white-space: nowrap; /* Verhindert Zeilenumbrüche */
+    background-color: rgb(214, 190, 53);
+}
+.header-content > img {
+    width: 200px;
+    height: auto;
 }
